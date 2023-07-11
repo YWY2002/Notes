@@ -61,12 +61,12 @@ print(name*3)
 #print(max(x,y,z))
 #print(min(x,y,z))
 
-#name= "John Cena"
-#first_name=name[:4]
-#last_name=name[5:9]
-#funky_name=name[0:9:2] #[start:stop:step]
-#reverse_name= name[::-1]
-#print(last_name)
+name= "John Cena"
+first_name=name[:4]
+last_name=name[5:9]
+funky_name=name[0:9:2] #[start:stop:step]
+reverse_name= name[::-1]
+print(last_name)
 
 #quantity = 3
 #itemno = 567
