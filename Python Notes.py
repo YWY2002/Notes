@@ -27,7 +27,8 @@ print(name.count("o"))
 print(name.replace("o","d"))
 print(name.lstrip("b"))    #strip left most char
 print(name.rstrip("o"))    #strip right most char
-print(name*3)
+time.split(":")
+time.join()
 
 #x=1
 #y=2.0
