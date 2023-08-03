@@ -69,3 +69,12 @@ while True:
 
 for _ in range(n):
     print("meow")
+
+#------------------------------------------------------------------#
+
+students = ["Herminone", "Harry", "Ron"]
+for student in students:
+    print(student)
+
+for i in range(len(students)):
+    print(i+1, student[i])
