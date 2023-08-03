@@ -41,7 +41,7 @@ def square(n):
 main()
 
 #------------------------------------------------------------------#
-
+#Check for even number
 def is_even(n):
     return True if n % 2 == 0 else False
 
@@ -71,10 +71,29 @@ for _ in range(n):
     print("meow")
 
 #------------------------------------------------------------------#
-
+#List
 students = ["Herminone", "Harry", "Ron"]
 for student in students:
     print(student)
 
 for i in range(len(students)):
     print(i+1, student[i])
+
+#------------------------------------------------------------------#
+#Dictionaries
+students = {
+    "Hermione": "Gryffindor",
+    "Harry": "Gryffindor",
+    "Ron": "Gryffindor",
+    "Draco": "Slytherin"
+}
+
+for student in students:
+    print(student, students[student], sep=", ")
+    
+'''
+output: Hermione, Gryffindor
+Harry, Gryffindor
+Ron, Gryffindor
+Draco, Slytherin
+'''
