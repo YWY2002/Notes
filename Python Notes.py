@@ -22,7 +22,7 @@ print(name.capitalize())    #cap first letter
 print(name.upper())        #upper case 
 print(name.lower())
 print(name.isdigit())
-print(name.isnumeric())  #all numbers
+print(name.isnumeric())  #with +,-,*,/,.
 print(name.isalpha())    #alphabet
 print(name.isalnum())    #alpahnumeric
 print(name.count("o"))
