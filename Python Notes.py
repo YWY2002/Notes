@@ -22,7 +22,8 @@ print(name.capitalize())    #cap first letter
 print(name.upper())        #upper case 
 print(name.lower())
 print(name.isdigit())
-print(name.isalpha())
+print(name.isalpha())    #alphabet
+print(name.isalnum())    #alpahnumeric
 print(name.count("o"))
 print(name.replace("o","d"))
 print(name.lstrip("b"))    #strip left most char
