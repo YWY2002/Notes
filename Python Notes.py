@@ -68,6 +68,9 @@ first_name=name[:4]
 last_name=name[5:9]
 funky_name=name[0:9:2] #[start:stop:step]
 reverse_name= name[::-1]
+last_letter=name[-1:]
+name="Yik Wen Yuan"
+middle_name=name[4:-5]
 print(last_name)
 
 #quantity = 3
