@@ -29,6 +29,7 @@ print(name.count("o"))
 print(name.replace("o","d"))
 print(name.lstrip("b"))    #strip left most char
 print(name.rstrip("o"))    #strip right most char
+fullname = "_".join(name)  #op: name_name
 time.split(":")
 time.join()
 
@@ -56,10 +57,10 @@ time.join()
 #y=2
 #z=3
 #print(round(pi, 2))
-#print(math.ceil(pi))    #round up
-#print(math.floor(pi))   #round down
-#print(abs(pi))          #absolute how far away from 0
-#print(pow(pi,1))        #power
+print(math.ceil(pi))    #round up
+print(math.floor(pi))   #round down
+print(abs(pi))          #absolute how far away from 0
+print(pow(pi,1))        #power
 #print(math.sqrt(pi))    
 #print(max(x,y,z))
 #print(min(x,y,z))
