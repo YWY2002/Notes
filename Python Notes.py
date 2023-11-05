@@ -1,7 +1,10 @@
 height = 165.5
 print(type(height)) #op: <class 'float'>
 
-name="bro"
+#------------------------------------------------------------------------------------#
+#Strings#
+
+name="John Cena"
 print(len(name))                #print length of string
 print(name.find("o"))           #find the first occurrence
 print(name.capitalize())        #cap first letter
@@ -12,44 +15,59 @@ print(name.isnumeric())         #incl. chinese, roman numbers
 print(name.isalpha())           #check if all are alphabet
 print(name.isalnum())           #alpahnumeric (excl. +,-,*,/,.)
 print(name.count("o"))          #count occurence of str  
-print(name.replace("o","d"))    #(old, new[, count])
-print(name.lstrip("b"))         #strip left most char
-print(name.rstrip("o"))         #strip right most char
+print(name.replace("e","i"))    #(old, new[, count])
+print(name.lstrip("J"))         #strip left most str
+print(name.rstrip("a"))         #strip right most str
+
+#------------------------------------------------------------------------------------#
+#Operations#
+
+import math
+pi=3.14159265
+print(round(pi, 2))            #round to n decimal pt
+print(math.ceil(pi))           #round up
+print(math.floor(pi))          #round down
+print(abs(pi))                 #absolute how far away from 0
+print(pow(pi,1))               #power
+print(math.sqrt(pi))           #squareroot
+print(max(x,y,z))              #max number
+print(min(x,y,z))              #min number
+
+#------------------------------------------------------------------------------------#
+#List#
+
+food = []                     #assign empty list
+food[0] = "sushi"             #replace
+food.append("ice cream")      #add to list
+food.remove(food[0])          #remove first occurrence of specified value
+food.pop()                    #remove last element/remove element at a specified location
+
+#food=["pizza","hamburgers","hotdog","spagetti","pudding"]      #list
+
+
+#food.insert(0,"cake")
+#food.clear()
+#print(food)
+#for x in food:
+    #print(x)
+
+#drinks = ["coffee","soda","tea"]       #2d list
+#dinner = ["pizza","hamburger","hotdog"]
+#dessert=["cake","ice cream"]
+#food=[drinks,dinner,dessert]
+#print(food[0][0])
+
+#student = ("Bro",21,"male")     #tuples(ordered and unchangeable)
+#print(student.count("Bro"))
+#print(student.index("male"))
+#for x in student:
+    #print(x)
+#if "Bro" in student:
+    #print("Bro is here")
+
 fullname = "_".join(name)       #op: name_name
 time.split(":")
 time.join()
-
-#x=1
-#y=2.0
-#z="3"fd
-#x=str(x)
-#y=float(y)
-#z=float(z)
-#print("x is "+x)
-#print(y)
-#print(z*4)
-
-#name=input("What is your name? : ")
-#age=int(input("What is your age? : "))
-#height=float(input("How tall are you?(cm) : "))
-#age=age+1
-#print("Hello "+ name)
-#print("You are "+str(age)+" years old")
-#print("You are "+str(height)+" cm tall")#
-
-#import math
-#pi=3.14
-#x=1
-#y=2
-#z=3
-#print(round(pi, 2))
-print(math.ceil(pi))    #round up
-print(math.floor(pi))   #round down
-print(abs(pi))          #absolute how far away from 0
-print(pow(pi,1))        #power
-#print(math.sqrt(pi))    
-#print(max(x,y,z))
-#print(min(x,y,z))
 
 name= "John Cena"
 first_name=name[:4]
@@ -130,31 +148,7 @@ print(last_name)
     #else:
         #print(i)  
 
-#food=["pizza","hamburgers","hotdog","spagetti","pudding"]      #list
-#food[0]="sushi"             #replace
-#print(food[0])
-#food.append("ice cream")    #add to list
-#food.remove(food[0])       #remove first occurrence of specified value
-#food.pop()                  #remove last element/remove element at a specified location
-#food.insert(0,"cake")
-#food.clear()
-#print(food)
-#for x in food:
-    #print(x)
 
-#drinks = ["coffee","soda","tea"]       #2d list
-#dinner = ["pizza","hamburger","hotdog"]
-#dessert=["cake","ice cream"]
-#food=[drinks,dinner,dessert]
-#print(food[0][0])
-
-#student = ("Bro",21,"male")     #tuples(ordered and unchangeable)
-#print(student.count("Bro"))
-#print(student.index("male"))
-#for x in student:
-    #print(x)
-#if "Bro" in student:
-    #print("Bro is here")
 
 #utensils={"fork","spoon","knife","knife","knife"}   #set(unordered, unindexed, no dupes)
 #dishes={"bowl","plate","cup","knife"}
