@@ -1,35 +1,21 @@
 height = 165.5
-print("your height is "+ str(height) +" cm")
-print(type(height))
-
-human=True
-print("Are you a human :"+str(human))
-
-name = "LOL"
-age=21
-attractive=True
-
-name, age, attractive="LOL", 21, True
-
-print(name)
-print(age)
-print(attractive)
+print(type(height)) #op: <class 'float'>
 
 name="bro"
-print(len(name))
-print(name.find("o"))
-print(name.capitalize())    #cap first letter
-print(name.upper())        #upper case 
-print(name.lower())
-print(name.isdigit())
-print(name.isnumeric())  #with +,-,*,/,.
-print(name.isalpha())    #alphabet
-print(name.isalnum())    #alpahnumeric
-print(name.count("o"))
-print(name.replace("o","d"))
-print(name.lstrip("b"))    #strip left most char
-print(name.rstrip("o"))    #strip right most char
-fullname = "_".join(name)  #op: name_name
+print(len(name))                #print length of string
+print(name.find("o"))           #find the first occurrence
+print(name.capitalize())        #cap first letter
+print(name.upper())             #upper case 
+print(name.lower())             #lower case 
+print(name.isdigit())           #check if all are number (excl. +,-,*,/,.)
+print(name.isnumeric())         #incl. chinese, roman numbers
+print(name.isalpha())           #check if all are alphabet
+print(name.isalnum())           #alpahnumeric (excl. +,-,*,/,.)
+print(name.count("o"))          #count occurence of str  
+print(name.replace("o","d"))    #(old, new[, count])
+print(name.lstrip("b"))         #strip left most char
+print(name.rstrip("o"))         #strip right most char
+fullname = "_".join(name)       #op: name_name
 time.split(":")
 time.join()
 
