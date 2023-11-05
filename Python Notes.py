@@ -39,17 +39,11 @@ print(min(x,y,z))              #min number
 food = []                     #assign empty list
 food[0] = "sushi"             #replace
 food.append("ice cream")      #add to list
-food.remove(food[0])          #remove first occurrence of specified value
-food.pop()                    #remove last element/remove element at a specified location
+food.insert(0,"cake")         #add str to a specified location
+food.remove("ice cream")      #remove first occurrence of specified value
+food.pop(1)                   #remove element at a specified location (default:remove last element)
+food.clear()                  #remove all elements
 
-#food=["pizza","hamburgers","hotdog","spagetti","pudding"]      #list
-
-
-#food.insert(0,"cake")
-#food.clear()
-#print(food)
-#for x in food:
-    #print(x)
 
 #drinks = ["coffee","soda","tea"]       #2d list
 #dinner = ["pizza","hamburger","hotdog"]
@@ -66,8 +60,8 @@ food.pop()                    #remove last element/remove element at a specified
     #print("Bro is here")
 
 fullname = "_".join(name)       #op: name_name
-time.split(":")
-time.join()
+food.split(":")                 #split str into list (default: newspaces)
+food.join()
 
 name= "John Cena"
 first_name=name[:4]
