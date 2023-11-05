@@ -148,8 +148,8 @@ print(last_name)
 #food[0]="sushi"             #replace
 #print(food[0])
 #food.append("ice cream")    #add to list
-#food.remove(food[0])       #remove from list
-#food.pop()                  #remove last element
+#food.remove(food[0])       #remove first occurrence of specified value
+#food.pop()                  #remove last element/remove element at a specified location
 #food.insert(0,"cake")
 #food.clear()
 #print(food)
