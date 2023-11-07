@@ -6,7 +6,8 @@ print(type(height)) #op: <class 'float'>
 
 name="John Cena"
 print(len(name))                #print length of string
-print(name.find("o"))           #find the first occurrence
+print(name.index("o"))          #find the first occurrence (raise ValueError if substring not found)
+print(name.find("o"))           #find the first occurrence (output -1 if substring not found)
 print(name.capitalize())        #cap first letter
 print(name.upper())             #upper case 
 print(name.lower())             #lower case 
@@ -18,6 +19,12 @@ print(name.count("o"))          #count occurence of str
 print(name.replace("e","i"))    #(old, new[, count])
 print(name.lstrip("J"))         #strip left most str
 print(name.rstrip("a"))         #strip right most str
+
+website1= "http://google.com"
+website2="http://wikipedia.com"
+slice1=slice(7,-4)                #slice(start,stop)
+print(website1[slice1])
+print(website2[slice1])
 
 #------------------------------------------------------------------------------------#
 #Operations#
@@ -34,34 +41,32 @@ print(max(x,y,z))              #max number
 print(min(x,y,z))              #min number
 
 #------------------------------------------------------------------------------------#
-#List#
+#List
 
 food = []                     #assign empty list
 food[0] = "sushi"             #replace
-food.append("ice cream")      #add to list
+food.append("ice cream")      #add element to the end of the list
 food.insert(0,"cake")         #add str to a specified location
 food.remove("ice cream")      #remove first occurrence of specified value
 food.pop(1)                   #remove element at a specified location (default:remove last element)
 food.clear()                  #remove all elements
+fullname = "_".join(name)     #sep.join(list/tuple/string)
+food.split(":")               #split str into list (default: newspaces)
 
+#2D List
 
-#drinks = ["coffee","soda","tea"]       #2d list
-#dinner = ["pizza","hamburger","hotdog"]
-#dessert=["cake","ice cream"]
-#food=[drinks,dinner,dessert]
-#print(food[0][0])
+drinks = ["coffee","soda","tea"]       
+dinner = ["pizza","hamburger","hotdog"]
+dessert=["cake","ice cream"]
+food=[drinks,dinner,dessert]
+print(food[2][1])             #MainList[sublist][element]
 
-#student = ("Bro",21,"male")     #tuples(ordered and unchangeable)
-#print(student.count("Bro"))
-#print(student.index("male"))
-#for x in student:
-    #print(x)
-#if "Bro" in student:
-    #print("Bro is here")
+#tuples(ordered and unchangeable)
 
-fullname = "_".join(name)       #op: name_name
-food.split(":")                 #split str into list (default: newspaces)
-food.join()
+student = ("Bro",21,"male")     
+
+#------------------------------------------------------------------------------------#
+#Index
 
 name= "John Cena"
 first_name=name[:4]
@@ -73,34 +78,12 @@ name="Yik Wen Yuan"
 middle_name=name[4:-5]
 print(last_name)
 
-#quantity = 3
-#itemno = 567
-#price = 49.95
-#myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
-#print(myorder.format(quantity, itemno, price))
 
-#website1= "http://google.com"
-#website2="http://wikipedia.com"
-#slice=slice(7,-4)
-#print(website1[slice])
-#print(website2[slice])
-
-#age=int(input("How old are you?: "))
-#if age==100:
-    #print("You are old!")
-#elif age>=18:
-    #print("You are an adult!")
-#elif age<0:
-    #print("You havent't been born yet!")
-#else:
-    #print("You are a child.")
-
-#temp=float(input("What is the temperature outside?: "))
-
-#if not(temp>=0 and temp<=30):
-    #print("The temperature is bad today!\nStay inside")
-#elif not(temp<0 or temp>30):
-    #print("The temperature is good today!\nGo outside")
+template = "Hi, {0}. The total cost will be {1:.2f}."
+price1 = 15.6
+price2 = 21.5
+message1 = template.format("Alice", price1)
+message2 = template.format("Bob", price2)
 
 #name=None
 #while not name:     #while len(name)==0:
