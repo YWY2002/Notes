@@ -1,10 +1,8 @@
-height = 165.5
-print(type(height)) #op: <class 'float'>
-
 #------------------------------------------------------------------------------------#
 #Strings#
 
 name="John Cena"
+print(type(height))             #op: <class 'float'>
 print(len(name))                #print length of string
 print(name.title())             #cap each word
 print(name.strip())             #strip left and right spaces
@@ -43,7 +41,7 @@ print(max(x,y,z))              #max number
 print(min(x,y,z))              #min number
 
 #------------------------------------------------------------------------------------#
-#List
+#List#
 
 food = []                     #assign empty list
 food[0] = "sushi"             #replace
@@ -68,24 +66,39 @@ print(food[2][1])             #MainList[sublist][element]
 student = ("Bro",21,"male")     
 
 #------------------------------------------------------------------------------------#
-#Index
+#Index#
 
 name= "John Cena"
 first_name=name[:4]
 last_name=name[5:9]
-funky_name=name[0:9:2] #[start:stop:step]
+funky_name=name[0:9:2]         #[start:stop:step]
 reverse_name= name[::-1]
 last_letter=name[-1:]
 name="Yik Wen Yuan"
 middle_name=name[4:-5]
 print(last_name)
 
+#------------------------------------------------------------------------------------#
+#Format#
 
 template = "Hi, {0}. The total cost will be {1:.2f}."
 price1 = 15.6
 price2 = 21.5
 message1 = template.format("Alice", price1)
 message2 = template.format("Bob", price2)
+
+#------------------------------------------------------------------------------------#
+#Conditionals#
+
+
+#------------------------------------------------------------------------------------#
+#Loop#
+
+for i in range(50,100+1,2):    #range(start, stop, step)
+    print(i)
+
+#------------------------------------------------------------------------------------#
+#Exceptions#
 
 #name=None
 #while not name:     #while len(name)==0:
