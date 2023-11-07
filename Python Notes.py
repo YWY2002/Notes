@@ -6,6 +6,8 @@ print(type(height)) #op: <class 'float'>
 
 name="John Cena"
 print(len(name))                #print length of string
+print(name.title())             #cap each word
+print(name.strip())             #strip left and right spaces
 print(name.index("o"))          #find the first occurrence (raise ValueError if substring not found)
 print(name.find("o"))           #find the first occurrence (output -1 if substring not found)
 print(name.capitalize())        #cap first letter
