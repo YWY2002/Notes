@@ -76,7 +76,6 @@ reverse_name= name[::-1]
 last_letter=name[-1:]
 name="Yik Wen Yuan"
 middle_name=name[4:-5]
-print(last_name)
 
 #------------------------------------------------------------------------------------#
 #Format#
@@ -94,36 +93,21 @@ message2 = template.format("Bob", price2)
 #------------------------------------------------------------------------------------#
 #Loop#
 
-for i in range(50,100+1,2):    #range(start, stop, step)
+for i in range(50,100+1,2):    #range(start[incl], stop[excl], step)
     print(i)
+
+#Nested Loop#
+
+rows=int(input("How many rows? : "))
+columns=int(input("How many columns? : "))
+symbol=input("enter a symbol to use: ")
+for i in range(rows):
+    for j in range(columns):
+        print(symbol,end="")
+    print()
 
 #------------------------------------------------------------------------------------#
 #Exceptions#
-
-#name=None
-#while not name:     #while len(name)==0:
-    #name=input("Enter your name: ")
-#print("Hello "+name)
-
-#for i in range(10):
-    #print(i+1)
-#for i in range(50,100+1,2):
-    #print(i)
-#for i in "Bro Code":
-    #print(i)
-#import time
-#for seconds in range(10,0,-1):
-    #print(seconds)
-    #time.sleep(1)
-#print("Happy New Year")
-
-#rows=int(input("How many rows? : "))
-#columns=int(input("How many columns? : "))
-#symbol=input("enter a symbol to use: ")
-#for i in range(rows):
-    #for j in range(columns):
-        #print(symbol,end="")
-    #print()
 
 #while True:
     #name=input("Enter your name: ")
