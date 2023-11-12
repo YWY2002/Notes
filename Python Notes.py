@@ -109,6 +109,16 @@ for i in range(rows):
 #------------------------------------------------------------------------------------#
 #Exceptions#
 
+while True:
+    try:
+        x = int(input("What's x?"))
+    except ValueError:
+        print("x is not an integer")
+    else:
+        break
+
+print(f"x is {x}")
+
 #while True:
     #name=input("Enter your name: ")
     #if name!="":
